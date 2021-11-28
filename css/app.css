@@ -74,7 +74,7 @@ body {
 }
 
 .header {
-  /* padding: 60px 0px; */
+  padding: 60px 0px;
 }
 
 .header-top {
@@ -116,6 +116,7 @@ body {
   top: 1px;
   position: absolute;
   left: 3px;
+  color: #ffffff;
 }
 
 .search-input:before {
