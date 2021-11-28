@@ -472,13 +472,12 @@ body {
 
 .top-nft-content-item-img-avt {
   transform: translate(0px, -50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  right: 20px;
+  position: absolute;
 }
 
 .top-nft-content-info {
-  padding: 0px 20px 30px 20px;
+  padding: 40px 20px 30px 20px;
 }
 
 .top-nft-content-info-name {
