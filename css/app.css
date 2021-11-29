@@ -815,4 +815,8 @@ body {
   .label-contact {
     font-size: 14px;
   }
+
+  .header-content {
+    flex-direction: column;
+  }
 }
