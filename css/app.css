@@ -625,12 +625,6 @@ body {
   border-radius: 50%;
 }
 
-.menu-toggle {
-  display: none;
-  width: 30px;
-  height: 20px;
-}
-
 @media (hover: hover) {
   .menu-link {
     position: relative;
