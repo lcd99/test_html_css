@@ -83,20 +83,6 @@ body {
   align-items: center;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 0 40px;
-}
-
-.menu-link {
-  color: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-}
-
 .search {
   position: relative;
   width: 280px;
@@ -625,6 +611,34 @@ body {
   border-radius: 50%;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0 40px;
+}
+
+.menu-link {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  width: 30px;
+  height: 20px;
+}
+
+.menu-toggle span {
+  pointer-events: none;
+  width: 100%;
+  height: 3px;
+  background: var(--bg_linear_gradient_to_right);
+  display: block;
+}
+
 @media (hover: hover) {
   .menu-link {
     position: relative;
@@ -641,10 +655,8 @@ body {
     transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-
   .menu-link:hover {
   }
-
   .menu-link:hover:after {
     width: 100%;
     left: 0;
@@ -667,20 +679,6 @@ body {
 
   .header {
     padding: 25px 0 50px;
-  }
-
-  .menu-toggle {
-    display: none;
-    width: 30px;
-    height: 20px;
-  }
-
-  .menu-toggle span {
-    pointer-events: none;
-    width: 100%;
-    height: 3px;
-    background: var(--bg_linear_gradient_to_right);
-    display: block;
   }
 
   .boxed-contact {
@@ -735,6 +733,7 @@ body {
     transform: translateX(100%);
     will-change: transform;
     transition: all 0.2s linear;
+    display: none;
   }
 
   .menu.is-show {
@@ -811,42 +810,6 @@ body {
   }
 
   .header-content {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: var(--bg_color);
-    width: 300px;
-    z-index: 99;
-    border-left: 1px solid #ddd;
-    flex-direction: column;
-    gap: 10px 0;
-    padding-top: 60px;
-    align-items: stretch;
-    transform: translateX(100%);
-    will-change: transform;
-    transition: all 0.2s linear;
-  }
-
-  .menu.is-show {
-    transform: translateX(0);
-  }
-
-  .menu-link {
-    display: block;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-    justify-content: space-between;
     flex-direction: column;
   }
 }
